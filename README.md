@@ -10,7 +10,7 @@ The primary objective of this study was to investigate social biases (ethnic and
 ## 🛠️ Methodology & Architecture
 * <b>TTI model:</b> Stable Diffusion 2.1.
 * <b>Classifier architecture:</b> ResNet-50 (fine-tuned).
-* <b>Dataset composition:</b> ~6,000 images depicting individuals of various ethnicities and genders across different workplace/professional settings (split 80/10/10 for training, validation, and testing).
+* <b>Dataset composition:</b> ~6,000 images depicting individuals of various ethnicities and genders across different workplace/professional settings (split 80/10/10 for training, validation, and testing). Detailed statistics on gender and ethnicity distribution can be found in the `dataset_stats.ipynb` file.
 * <b>Experimental setup:</b> Evaluated across three distinct configurations to assess the impact of data balancing on predictive bias:
   * <b>Experiment 1 (Unbalanced baseline):</b> Trained on the raw, unbalanced training set.
   * <b>Experiment 2 (Full undersampling):</b> The training set was balanced by undersampling all classes to match the size of the minority class (Hispanic).
